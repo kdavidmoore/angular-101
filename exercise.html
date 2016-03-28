@@ -1,63 +1,22 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="myApp">
 	<head>
 		<title>AngularJS 101</title>
-		<style>
-			body {
-				font-family: Arial, Helvetica, sans-serif;
-			}
-			li {
-				list-style-type: none;
-				margin-bottom: 5px;
-			}
-			li label {
-				font-weight: bold;
-			}
-			input {
-				width: 200px;
-				height: 20px;
-				line-height: 18px;
-			}
-		</style>
-	</head>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-	<body>
-		<!-- 
-		<label>Name 1:</label><input type="text" ng-model="name">
-		<label>Name 2:</label><input type="text" ng-model="name">
-		<label>Name 3:</label><input type="text" ng-model="name"> -->
-
-		<!--
-		<label>First Name:</label><input type="text" ng-model="first">
-		<label>First Name:</label><input type="text" ng-model="last">
-
-		Hello, {{first}} {{last}}! -->
-		<!-- Hello, <span id="input-text">world</span>! -->
-
-		<!--
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts.js"></script>
-		-->
+	</head>
+	<body ng-controller="myController">
 
-		<div>
-			<ul>
-				<li><label>Name </label><input type="text" ng-model="name"></li>
-				<li><label>Address </label><input type="text" ng-model="addr"></li>
-				<li><label>City </label><input type="text" ng-model="city"></li>
-				<li><label>State </label><input type="text" ng-model="state"></li>
-				<li><label>Zip </label><input type="text" ng-model="zip"></li>
-			</ul>
-		</div>
+		<!-- <li ng-repeat="student in dcClass">{{student.name}} - {{student.desc}}</li> -->
 
-		<div style="position: absolute; top: 0; right: 200px;">
-			<ul>
-				<li><label>Name:</label> {{name}}</li>
-				<li><label>Address:</label> {{addr}}</li>
-				<li><label>City:</label> {{city}}</li>
-				<li><label>State:</label> {{state}}</li>
-				<li><label>Zip:</label> {{zip}}</li>
-			</ul>
-		</div>	
+		<li ng-repeat="student in dcClass">
+			<a href="" ng-click="removeStudent(student)">{{student}}</a>
+		</li>
+
+		<form ng-submit="addStudent()">
+			<input type="text" ng-model="newStudent">
+			<input type="submit" value="Add Student">
+		</form>
 
 	</body>
 </html>
