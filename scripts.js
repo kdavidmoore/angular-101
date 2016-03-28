@@ -9,79 +9,20 @@ myApp.controller('myController', function($scope){
 	//$scope.first = "Keith";
 	//$scope.last = "Moore";
 
-	$scope.dcClass = [
+	$scope.cities = [
 		{
-			name: 'Tristan',
-			desc: 'Stock guy',
-			luckyNumber: 12
+			name: 'Atlanta',
+			population: 500000
 		},
 		{
-			name: 'Josh',
-			desc: 'Designer extraordinaire',
-			luckyNumber: 3
+			name: 'Houston',
+			population: 2200000
 		},
 		{
-			name: 'Bogdon',
-			desc: 'Sik dude',
-			luckyNumber: 0
-		},
-		{
-			name: 'Lazlo',
-			desc: '?',
-			luckyNumber: 0
-		},
-		{
-			name: 'Keith',
-			desc: 'Rock man',
-			luckyNumber: 5730
-		},
-		{
-			name: 'Will',
-			desc: 'Ski guy',
-			luckyNumber: 32
-		},
-		{
-			name: 'Curtis',
-			desc: 'Java dev extraordinaire',
-			luckyNumber: 0
-		},
-		{
-			name: 'Joe',
-			desc: 'Code wizard',
-			luckyNumber: 10
-		},
-		{
-			name: 'Kochan',
-			desc: '?',
-			luckyNumber: 0
-		},
-		{
-			name: 'Patrick',
-			desc: '?',
-			luckyNumber: 0
-		},
-		{
-			name: 'Jonathan',
-			desc: 'The Handsome One',
-			luckyNumber: 0
-		},
-		{
-			name: 'Jeremy',
-			desc: '?',
-			luckyNumber: 0
+			name: 'Portland',
+			population: 610000
 		}
 	];
 
-	$scope.addStudent = function(name, desc, luckyNo){
-		$scope.dcClass.push({
-			name: $scope.newName,
-			desc: $scope.newDesc,
-			luckyNumber: $scope.newLuckyNo
-		});
-	}
-
-	$scope.removeStudent = function(name){
-		$scope.dcClass.splice(name, 1);
-	}
-
+	
 })
