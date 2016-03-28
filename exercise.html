@@ -10,7 +10,7 @@
 		<div>
 			<h3>DigitalCrafts Students</h3>
 			<li ng-repeat="student in dcClass">
-				<a href="" ng-click="removeStudent()">{{student.name}} - {{student.desc}}</a>
+				<a href="" ng-click="removeStudent($index)">{{student.name}} - {{student.desc}}</a>
 			</li>
 		</div>
 

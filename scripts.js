@@ -73,11 +73,15 @@ myApp.controller('myController', function($scope){
 	];
 
 	$scope.addStudent = function(name, desc, luckyNo){
-		$scope.dcClass.push({ name: $scope.newName, desc: $scope.newDesc, luckyNumber: $scope.newLuckyNo });
+		$scope.dcClass.push({
+			name: $scope.newName,
+			desc: $scope.newDesc,
+			luckyNumber: $scope.newLuckyNo
+		});
 	}
 
-	$scope.removeStudent = function(){
-		$scope.dcClass.splice(this, 1);
+	$scope.removeStudent = function(name){
+		$scope.dcClass.splice(name, 1);
 	}
 
 })
