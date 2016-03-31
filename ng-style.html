@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="angularStyle">
+	<head>
+		<title>Angular Practice with Style</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<script type="text/javascript" src="student.js"></script>
+		<script type="text/javascript" src="style-controller.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body ng-controller="styleController">
+		<div id="wrapper" ng-style="{color: myColor}">
+			<div id="header">
+				<img src="img/consider.gif">
+				<h1>angular + sass = awesome</h1>
+			</div>
+			<div class="item">
+				<table>
+					<theader>
+						<th>Name</th>
+						<th>Former Title</th>
+					</theader>
+					<tbody>
+						<tr ng-repeat="student in students">
+							<td>{{student.name}}</td>
+							<td>{{student.former}}</td>
+							<td><input type="checkbox" ng-model="checked"></td>
+							<td><span ng-show="checked" ng-class="{ 'accepted' : understandYes==3 }">Checked!</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="color-input">
+				<input type="text" ng-model="myColor" placeholder="Enter a color">
+			</div>
+			<div class="iunderstand">
+				<div class="item">
+					I understand the consequences.
+					<input type="checkbox" ng-model="hideMe">
+				</div>
+				<div class="item" ng-hide="hideMe">
+					By checking the above, you accept full responsibility for all checkboxes that are marked.
+				</div>
+				<div class="item" ng-hide="myColor=='red'">
+					I will hide if the color is set to red.
+				</div>
+				<button ng-click="understand()">I understand</button>
+			</div>
+		</div>
+	</body>
+</html>

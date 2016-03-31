@@ -1,0 +1,33 @@
+body {
+  background-color: $black;
+  #wrapper {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    background-color: $grey;
+    img {
+      width: 100%;
+    }
+    #header {
+      position: relative;
+      border: $header-border 10px solid;
+      padding: 20px;
+    }
+    .item {
+      padding: 10px 0;
+      table {
+        .accepted {
+          color: blue;
+          font-size: 2em;
+        }
+      }
+    }
+    .color-input {
+      input {
+        height: 18px;
+        line-height: 16px;
+      }
+    }
+  }
+}

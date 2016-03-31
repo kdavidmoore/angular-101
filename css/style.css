@@ -1,0 +1,36 @@
+/* line 1, ../compass/sass/_base.scss */
+body {
+  background-color: #000;
+}
+/* line 3, ../compass/sass/_base.scss */
+body #wrapper {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  background-color: #cacaca;
+}
+/* line 9, ../compass/sass/_base.scss */
+body #wrapper img {
+  width: 100%;
+}
+/* line 12, ../compass/sass/_base.scss */
+body #wrapper #header {
+  position: relative;
+  border: #5c9bb7 10px solid;
+  padding: 20px;
+}
+/* line 17, ../compass/sass/_base.scss */
+body #wrapper .item {
+  padding: 10px 0;
+}
+/* line 20, ../compass/sass/_base.scss */
+body #wrapper .item table .accepted {
+  color: blue;
+  font-size: 2em;
+}
+/* line 27, ../compass/sass/_base.scss */
+body #wrapper .color-input input {
+  height: 18px;
+  line-height: 16px;
+}
