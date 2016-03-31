@@ -1,7 +1,5 @@
 # AngularJS 101
 
-## Learning AngularJS
-
-Demonstrate basic functionality.
+## A series of exercies that demonstrate the basics of AngularJS
 
 [I learned this at DigitalCrafts](https://www.digitalcrafts.com)
