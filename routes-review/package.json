@@ -1,0 +1,22 @@
+{
+  "name": "routes-review",
+  "version": "1.0.0",
+  "description": "A simple routes review exercise",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \\\"hello\\\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "angular101"
+  },
+  "keywords": [
+    "angularjs",
+    "angular-routes",
+    "node.js"
+  ],
+  "author": "Keith D. Moore",
+  "license": "ISC"
+}
